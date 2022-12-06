@@ -4,14 +4,26 @@ const path = require('path');
 const sc = '\r\n';
   
 const run = async () => {
-  fs.readFile(path.join(__dirname, './test.txt'), 'utf8', (err, data) => {
-  // fs.readFile(path.join(__dirname, './input.txt'), 'utf8', (err, data) => {
+  // fs.readFile(path.join(__dirname, './test.txt'), 'utf8', (err, data) => {
+  fs.readFile(path.join(__dirname, './input.txt'), 'utf8', (err, data) => {
     if (err) throw err;
     // ----------------
 
-    data = data.split(sc);
-    // data = data.split(sc + sc);
-    console.log(data);
+    for (let i = 3; i < data.length; i++) {
+      let hash = {};
+      for (let j = 0; j < 4; j++) {
+        if (hash[data[i - j]] === undefined) hash[data[i - j]] = 0;
+      }
+      let c = 0;
+      for (const prop in hash) {
+        c++;
+      }
+
+      if (c === 4) {
+        console.log(i + 1)
+        break;
+      }
+    }
     
     // -----------------
   });
