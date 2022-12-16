@@ -96,7 +96,7 @@ const run = async () => {
 
       let valid = true;
       for (const point of allPoints) {
-        let d = Math.abs(intersection.y - point[0]) + Math.abs(intersection.x - point[1]); // add one for the edge
+        let d = Math.abs(intersection.y - point[0]) + Math.abs(intersection.x - point[1]);
         if (d < point[2]) {
           valid = false;
           break;
