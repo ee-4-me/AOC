@@ -109,4 +109,6 @@ const run = async () => {
   });
 }
 
+console.time('run');
 run();
+console.timeEnd('run');
