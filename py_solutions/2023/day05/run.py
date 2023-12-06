@@ -5,7 +5,7 @@ import math
 import copy
 from helper.helper import getFile, mymap, myfilter, download_input, hash_string, hashes_equal
 
-download_input(os.path.abspath(os.curdir), '')
+download_input(os.path.abspath(os.curdir))
 
 # 00:31:00  3197, cant be mad
 

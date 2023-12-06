@@ -2,6 +2,8 @@ import os
 from os.path import isfile
 import requests
 
+from helper.cookie import SESSION_COOKIE
+
 # define libraries here
 
 def getFile(path):
@@ -17,7 +19,7 @@ def mymap(data, ld):
 def binarySearch(arr, target):
     pass
 
-def download_input(file_path, session_cookie):
+def download_input(file_path):
     path = os.path.normpath(file_path)
     path_list = path.split(os.sep)
     day = int(path_list[-1][3:])
@@ -30,7 +32,7 @@ def download_input(file_path, session_cookie):
                 return
 
     url = f'https://adventofcode.com/{year}/day/{day}/input'
-    cookies = {'session': session_cookie}
+    cookies = {'session': SESSION_COOKIE}
     
     response = requests.get(url, cookies=cookies)
     

@@ -4,7 +4,7 @@ import os
 import math
 from helper.helper import getFile, mymap, myfilter, download_input
 
-download_input(os.path.abspath(os.curdir), '')
+download_input(os.path.abspath(os.curdir))
 
 def key(i, j):
     return f'{i} {j}'

@@ -5,7 +5,7 @@ import math
 import copy
 from helper.helper import getFile, mymap, myfilter, download_input, hash_string, hashes_equal
 
-download_input(os.path.abspath(os.curdir), '53616c7465645f5f62fa34767db5d49196e9adc99b8b76629de3b8bb0641f3e8227bbb21f99481462cbbf0046b42eb539f2b7388114025ca4c4fa394014337f9')
+download_input(os.path.abspath(os.curdir))
 
 def part1():
     data = getFile(os.path.join(os.curdir, 'input.txt')).strip()
