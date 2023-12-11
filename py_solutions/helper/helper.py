@@ -69,3 +69,6 @@ def hashes_equal(h1, h2):
 
     return True
 
+def key(i, j):
+    return f'{i} {j}'
+

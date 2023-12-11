@@ -3,7 +3,7 @@ sys.path.insert(0, '../../')
 import os
 import math
 import copy
-from helper.helper import getFile, mymap, myfilter, download_input, hash_string, hashes_equal
+from helper.helper import getFile, mymap, myfilter, download_input, hash_string, hashes_equal, key
 
 download_input(os.path.abspath(os.curdir))
 
