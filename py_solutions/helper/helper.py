@@ -72,3 +72,6 @@ def hashes_equal(h1, h2):
 def key(i, j):
     return f'{i} {j}'
 
+def key3(i, j, c):
+    return f'{i} {j} {c}'
+

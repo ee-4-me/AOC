@@ -4,7 +4,7 @@ import os
 import math
 import copy
 from itertools import permutations
-from helper.helper import getFile, mymap, myfilter, download_input, hash_string, hashes_equal, key
+from helper.helper import getFile, mymap, myfilter, download_input, hash_string, hashes_equal, key, key3
 
 download_input(os.path.abspath(os.curdir))
 
