@@ -75,3 +75,13 @@ def key(i, j):
 def key3(i, j, c):
     return f'{i} {j} {c}'
 
+
+UP = (-1, 0)
+RIGHT = (0, 1)
+DOWN = (1, 0)
+LEFT = (0, -1)
+
+dUP = 0
+dRIGHT = 1
+dDOWN = 2
+dLEFT = 3
